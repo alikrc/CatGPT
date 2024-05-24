@@ -25,7 +25,7 @@
 
     <v-row>
       <v-col v-for="data in datas" :key="data.id" cols="12" md="4">
-        <v-card :text="data.description">
+        <v-card>
           <v-img :src="data.url" height="200px"></v-img>
 
           <v-card-title>{{ data.title }}</v-card-title>
