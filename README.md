@@ -2,7 +2,9 @@
 
 # CatGPT
 
-This is an demonstration project using Vue 3 and Vuetify. Uses https://thecatapi.com/ to search for images. Visit to get an api key for free.
+Love cats and Vue 3? This interactive project lets you search for adorable cat images using the power of Vue 3 and Vuetify! Explore different breeds and categories with a user-friendly interface built with Material Design principles.
+
+Uses https://thecatapi.com/ to search for images. Visit to get an api key for free.
 
 | Package Manager                                           | Command       |
 | --------------------------------------------------------- | ------------- |
