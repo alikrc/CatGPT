@@ -78,22 +78,17 @@ const toggleBreeds = () => {
 
 async function getRandomCats() {
   let response = await api.getRandomCatImage(includeBreeds.value);
+
   datas.value = response.map(
     (r) => new Card(r.id, r.breeds?.[0]?.name ?? "", r.url)
   );
 }
 
 async function fetchCats(searchQuery) {
-  try {
-    console.log(searchQuery);
+  let response = await api.searchBreeds(searchQuery);
 
-    let response = await api.searchBreeds(searchQuery);
-
-    datas.value = response.map(
-      (r) => new Card(r.id, r.name, r.image?.url, r.origin, r.description)
-    );
-  } catch (error) {
-    console.error("Error fetching cats:", error);
-  }
+  datas.value = response.map(
+    (r) => new Card(r.id, r.name, r.image?.url, r.origin, r.description)
+  );
 }
 </script>
